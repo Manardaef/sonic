@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    /* background: linear-gradient(rgb(197, 230, 243),rgb(210, 244, 241)); */
+}
+.main{
+    width: 100%;
+    background: linear-gradient(rgb(197, 230, 243),rgb(210, 244, 241));
+    height: 100vh;
+}
+.main .container{
+    width: 95%;
+    
+}
+.main .container .nav{
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+    .main .container .nav ::after{
+        border-bottom:2px rgb(106, 136, 133) solid ;
+        width:100%;
+    }
+
+.main .container .nav .logo{
+    color: #0F0028;
+    font-weight: 750;
+    font-size: 25px;
+    margin-top: 20px;
+    width: 35%;
+    & span{
+        color:#2DCACF;
+        font-weight: 900;
+    }
+}
+.main .container .nav .bar{
+    display: none;
+}
+.main .container .nav .links{
+margin-top: 20px;
+
+}
+.main .container .nav .links ul{
+    display: flex;
+justify-content: space-between;
+list-style-type: none;
+& a{
+    padding: 0px 10px;
+    color:#0F0028;
+    text-decoration: none;
+    font-size: larger;
+}
+}
+.main .container .nav .links ul a:hover{
+    border-bottom: #0f00285d 2px solid;
+}
+.main .container .nav .buttons{
+    margin-top: 20px;
+ float: right;
+    & .si{
+        color:#0F0028;
+        text-decoration: none;
+        padding: 0px 5px;
+    }
+    & .lo{
+        border: 2px rgb(210, 244, 241) solid;
+        border-radius: 30px;
+        background-color: rgb(197, 230, 243);
+        box-shadow: 0px  0px 10px;
+        color:#0F0028;
+        padding: 10px;
+      ;
+    }
+    & .lo:hover{
+        cursor: pointer;
+    }    
+    
+}
+.main .container .nav .buttons:hover{
+    cursor: pointer;
+}
+.main .container .cont{
+    width:70% ;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.main .container .cont .pic{
+    margin-top: 50px;
+    width:30%;
+    & img{
+        width:350px;
+    }
+}
+.main .container .cont .text{
+    margin-top: 250px;
+    & h1{
+      font-size: 50px;
+      width: 40%;
+      font-weight: 900;
+      color: #0F0028;
+      & span{
+        color: #2DCACF;
+      }
+    }
+    & .pr{
+        margin-top: 20px;
+        color: #0F0028;
+        font-size: large;
+    }
+    & .but button{
+        border: 2px rgb(210, 244, 241) solid;
+        border-radius: 30px;
+        background-color: rgb(197, 230, 243);
+        box-shadow: 0px  0px 10px;
+        color:#0F0028;
+        padding: 10px;
+        margin-top: 40px;
+        font-size: 25px;
+    }
+& .but button:hover{
+    cursor: pointer;
+}
+}
